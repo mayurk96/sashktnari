@@ -1,0 +1,11 @@
+job_id,title,company_name,location,work_type,remote,description,salary_range
+1001,Software Engineer,TechCorp,Mumbai India,Full Time,true,Senior software engineer position with focus on full-stack development,800000-1200000
+1002,UI/UX Designer,DesignHub,Bangalore India,Full Time,true,Creative designer needed for innovative projects,600000-900000
+1003,Data Scientist,DataTech,Delhi India,Full Time,false,Lead data science initiatives and ML projects,1000000-1500000
+1004,Project Manager,ProjectPro,Mumbai India,Full Time,true,Manage technology projects and lead teams,900000-1400000
+1005,Game Developer,GameStudio,Pune India,Full Time,true,Develop exciting mobile and PC games,700000-1100000
+1006,Frontend Developer,WebTech,Chennai India,Part Time,true,Create responsive web applications,400000-600000
+1007,Backend Engineer,ServerPro,Hyderabad India,Contract,true,Build scalable backend services,800000-1200000
+1008,ML Engineer,AITech,Bangalore India,Full Time,false,Develop machine learning models,1100000-1600000
+1009,DevOps Engineer,CloudTech,Mumbai India,Full Time,true,Manage cloud infrastructure and CI/CD,900000-1300000
+1010,Product Designer,DesignCo,Delhi India,Part Time,true,Design user-centric products,500000-800000 

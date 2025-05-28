@@ -1,0 +1,137 @@
+.skill-development-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+  
+  .page-header h1 {
+    font-size: 2.5rem;
+    color: var(--primary-color);
+  }
+  
+  .back-link {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+  }
+  
+  .back-link:hover {
+    color: var(--primary-color);
+  }
+  
+  .page-content {
+    background-color: white;
+    border-radius: 15px;
+    padding: 30px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+  }
+  
+  .search-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+  }
+  
+  .search-form input {
+    flex-grow: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+  }
+  
+  .search-btn {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .search-btn:hover:not(:disabled) {
+    background-color: var(--secondary-color);
+  }
+  
+  .search-btn:disabled {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }
+  
+  .results {
+    margin-top: 30px;
+  }
+  
+  .results h2 {
+    font-size: 1.8rem;
+    color: var(--primary-color);
+    margin-bottom: 20px;
+  }
+  
+  .video-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .video-card {
+    background-color: #f7f7f7;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .video-card h3 {
+    margin-bottom: 15px;
+    color: var(--text-color);
+  }
+  
+  .watch-btn {
+    display: inline-block;
+    background-color: var(--secondary-color);
+    color: white;
+    text-decoration: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .watch-btn:hover {
+    background-color: var(--primary-color);
+  }
+  
+  @media (max-width: 768px) {
+    .skill-development-page {
+      padding: 20px;
+    }
+  
+    .page-header {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .page-header h1 {
+      margin-bottom: 15px;
+    }
+  
+    .search-form {
+      flex-direction: column;
+    }
+  
+    .video-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
+  
