@@ -16,13 +16,6 @@ connectDB();
 app.use(cors());
 app.use(express.json());
 
-const cors = require('cors');
-
-app.use(cors({
-  origin: ['http://localhost:5000', 'https://sashktnari-3t9m.onrender.com'], // Replace with your frontend URL
-  credentials: true
-}));
-
 // Routes
 app.use('/api/users', require('./routes/userRoutes'));
 
