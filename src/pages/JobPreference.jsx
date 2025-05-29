@@ -106,8 +106,8 @@ const JobPreference = () => {
       console.log('Sending formatted profile data:', formattedProfile);
 
       const [jobsResponse, companiesResponse] = await Promise.all([
-        axios.post('http://localhost:5002/api/recommendations', formattedProfile),
-        axios.post('http://localhost:5002/api/recommendations', formattedProfile)
+        axios.post('https://sashktnari7-912z.onrender.com/api/recommendations', formattedProfile),
+        axios.post('https://sashktnari7-912z.onrender.com/api/recommendations', formattedProfile)
       ]);
 
       // Log the responses
@@ -396,4 +396,5 @@ const JobPreference = () => {
 };
 
 export default JobPreference;
+
 
