@@ -4,11 +4,14 @@ import Peer from 'peerjs';
 
 export const SocketContext = createContext();
 
-const socket = io('http://localhost:5000'); // Replace with your backend URL
+// ... existing code ...
+const socket = io('https://sashktnari7-912z.onrender.com'); // Updated to Render backend URL
 const peer = new Peer(undefined, {
-  host: '/',
-  port: window.location.hostname === 'localhost' ? '5001' : '', // Adjust for production
+  host: 'sashktnari7-912z.onrender.com',
+  port: '', // No port needed for production
+  secure: true
 });
+// ... existing code ...
 
 const SocketProvider = ({ children }) => {
   const [call, setCall] = useState({});
@@ -152,3 +155,4 @@ const SocketProvider = ({ children }) => {
 };
 
 export default SocketProvider;
+
