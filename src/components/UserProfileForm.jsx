@@ -87,10 +87,10 @@ const UserProfileForm = () => {
     setLoading(true);
     setError(null);
 
-    try {
+   try {
       const [jobsResponse, companiesResponse] = await Promise.all([
-        axios.post('https://sashktnari7-912z.onrender.com/api/recommendations/jobs', formData),
-        axios.post('https://sashktnari7-912z.onrender.com/api/recommendations/companies', formData)
+        axios.post('http://localhost:5000/api/recommendations/jobs', formData),
+        axios.post('http://localhost:5000/api/recommendations/companies', formData)
       ]);
 
       if (jobsResponse.data.success) {
