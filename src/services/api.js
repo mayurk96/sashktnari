@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_URL = 'https://sashktnari-tm5d.onrender.com';
+const API_URL = 'https://sashktnari7-912z.onrender.com';
 
 const api = axios.create({
   baseURL: API_URL,
