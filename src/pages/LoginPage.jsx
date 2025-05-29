@@ -38,6 +38,17 @@ function LoginPage() {
     }
   };
 
+  const handleGuestAccess = () => {
+    // Create a guest user object with limited access
+    const guestUser = {
+      isGuest: true,
+      email: 'guest@example.com',
+      name: 'Guest User'
+    };
+    login(guestUser);
+    navigate('/dashboard');
+  };
+
   return (
     <div className="login-page">
       <div className="login-background"></div>
@@ -90,6 +101,16 @@ function LoginPage() {
         </form>
         <div className="auth-links">
           <Link to="/forgot-password" className="forgot-link">Forgot Password?</Link>
+        </div>
+        <div className="guest-access">
+          <motion.button
+            onClick={handleGuestAccess}
+            className="guest-btn"
+            whileHover={{ scale: 1.02 }}
+            whileTap={{ scale: 0.98 }}
+          >
+            View as Guest
+          </motion.button>
         </div>
         <p className="signup-text">
           Don't have an account? <Link to="/signup" className="link">Sign up</Link>
